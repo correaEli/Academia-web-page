@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;
+padding:0px;}
+.slider{
+	margin-top:50px;
+	position:relative;
+	width: 100%;
+	height: 45vw; min-height:280px;
+	background-color:  rgba(220,169,95,1.00) ;
+}
+.contenido{
+	margin-top:100px;
+	margin-bottom:50px;
+	width:100%;
+	height: auto;
+	position:relative;
+	background-color:rgba(237,204,167,1.00);; 
+	overflow: hidden;
+}
+.centralizar{
+	width:auto;
+	height:auto;
+	margin:auto;
+	}
+.baners{ width:100%;
+height:30vw; min-height:189px;
+position:relative;
+background-color:rgba(237,204,167,1.00);}
+
+#baner1,#baner2,#baner3{
+	width:25vw;
+	height: 20vw; min-height:130px;
+	position: relative;
+	border: solid 10px black;
+	overflow: hidden;/* este es lo que se utiliza para esconder todo lo que este fuera de la imagen*/
+	box-shadow: 0 px 0px 5px 2px rgba(0,0,0,0.5);
+	background-color: rgba(213,202,163,1.00);
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	margin-top: 15px;
+	margin-left:2vw;
+	float:left;
+}
+#baner1 img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	transition:all 0.4s ease-in-out;
+	-moz-transition:all 0.4s ease-in-out;
+	-ms-transition:all 0.4s ease-in-out;
+	-o-transition:all 0.4s ease-in-out;
+	-webkit-transition:all 0.4s ease-in-out;
+}
+#baner1:hover img{
+	opacity:0;
+	transform:translateY(0);
+	-moz-transform:translateY(0);
+	-ms-transform:translateY(0);
+	-o-transform:translateY(0);
+	-webkit-transform:translateY(0);
+}
+#baner1:hover h1, #baner1:hover p, #baner1:hover a{
+	opacity:1;
+	transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	-webkit-transform:scale(1);
+}
